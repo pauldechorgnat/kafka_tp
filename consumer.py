@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from kafka.consumer import SimpleConsumer
 from kafka import SimpleClient
 import argparse
