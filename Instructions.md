@@ -13,3 +13,4 @@ Some insights to help you:
 * to implement the producer, you can get inspiration from the implementation of the `StdOutListener` in `twitter_listener.py` and add the publishing process in the `on_data` method. 
 * to implement the consumer, you can get inspiration from the `consumer_to_json.py` file.
 * "trump" is a good subject to perform the streaming as there are a lot of Tweets on this subject.
+* the messages in Kafka are written in bytes and not in string so you might have to encode/decode the content of the messages.
