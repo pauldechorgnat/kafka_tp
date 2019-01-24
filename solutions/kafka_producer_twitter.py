@@ -55,7 +55,7 @@ class KafKaTwitterProducer(StreamListener):
         # first we need to parse the data into a dictionary
         data_dictionary = json.loads(data)
         # sending the data to the producer
-        self.producer.send_messages(self.topic, data_dictionary['text'].encode('utf-8'))
+        self.producer.send_messages(self.topic, data.encode('utf-8'))
         if self.verbose:
             print('\nTweet\t{}/{}'.format(self.counter+1, self.max_count))
             print('Author:\t', data_dictionary['user']['screen_name'])
