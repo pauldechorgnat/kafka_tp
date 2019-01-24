@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from tweepy.streaming import StreamListener, Stream
 from tweepy import OAuthHandler
 import json
