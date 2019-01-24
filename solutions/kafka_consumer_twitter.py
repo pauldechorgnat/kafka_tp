@@ -45,5 +45,5 @@ if __name__ == '__main__':
         else:
             file_name = 'tweet_n_{}.json'.format(counter+1)
             message = json.loads(messages[0].message.value)
-            with open(os.path.join(path_to_sink_folder, file_name), 'w') as json_file:
+            with open(os.path.join(path_to_sink_folder, file_name), 'w', encoding='utf-8') as json_file:
                 json.dump(message, json_file)
