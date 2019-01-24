@@ -9,7 +9,7 @@ import json
 if __name__ == '__main__':
     # creating an argument parser to define where to get the messages from and where to dump them
     argument_parser = argparse.ArgumentParser()
-    argument_parser.add_argument('--topic', type=str, default='test')
+    argument_parser.add_argument('--topic', type=str, default='trump')
     argument_parser.add_argument('--hosts', type=str, default='localhost:9092')
     argument_parser.add_argument('--path', type=str, default='./tweets')
 
