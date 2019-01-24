@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from kafka import SimpleProducer, SimpleClient
 import argparse
 
